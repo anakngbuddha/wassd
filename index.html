@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMG! You Won't Believe This! 😂</title>
+    <!-- Open Graph Meta Tags for Facebook -->
+    <meta property="og:title" content="This Meme Will Make You Laugh! 😂">
+    <meta property="og:description" content="Click to see the funniest thing today!">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80">
+    <!-- Force cache refresh with random query parameter -->
+    <meta property="og:image:url" content="https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&cache-bust=123456">
+    <!-- Add image dimensions to help social platforms -->
+    <meta property="og:image:width" content="1000">
+    <meta property="og:image:height" content="800">
+    <meta property="og:image:type" content="image/jpeg">
+    <!-- Twitter card tags to ensure Twitter uses our image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80">
+    <meta property="og:url" content="https://anakngbuddha.github.io/random/">
+    <meta property="og:type" content="website">
+    
+    <!-- Fix for Facebook Debugger Warning -->
+    <meta property="fb:app_id" content="123456789">
+    <!-- Redirect to Shopee After 1 Second -->
+    <!-- Add noindex to prevent search engines from following the redirect -->
+    <meta name="robots" content="noindex,nofollow">
+    <!-- Increase delay to ensure preview loads properly before redirect -->
+    <meta http-equiv="refresh" content="3;url=https://shopee.ph/product/457224234/12205762990?uls_trackid=52cfof6g001f&preview=blocked">
+</head>
+<body>
+    <h1>Redirecting you to something awesome...</h1>
+    <!-- Add visible image to force preloading -->
+    <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+         alt="Preview image" style="width:1px;height:1px;position:absolute;opacity:0.01;">
+    
+    <!-- Add script to ensure image loads before redirect -->
+    <script>
+        // Disable caching
+        document.querySelector('meta[http-equiv="refresh"]').content = "none";
+        
+        // Load the image first
+        const img = new Image();
+        img.src = "https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80&t=" + new Date().getTime();
+        
+        img.onload = function() {
+            // After image is loaded, redirect after a delay
+            setTimeout(function() {
+                window.location.href = "https://shopee.ph/product/457224234/12205762990?uls_trackid=52cfof6g001f&preview=blocked";
+            }, 3000);
+        };
+    </script>
+</body>
+</html>
